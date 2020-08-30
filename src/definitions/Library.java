@@ -11,4 +11,7 @@ public class Library {
 
     private Book[] availableBooks;
 
+    public void setAvailableBooks(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 }

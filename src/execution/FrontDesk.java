@@ -6,6 +6,10 @@
  */
 package execution;
 
+import definitions.Book;
+import definitions.Library;
+import definitions.Student;
+
 import java.util.Scanner;
 
 public class FrontDesk {
@@ -20,6 +24,9 @@ public class FrontDesk {
         String nameOfBook;
         String fullName;
         long rollNumber;
+        Book bookObject = new Book();
+        Student studentObject = new Student();
+        Library libraryObject = new Library();
         studentInput = scannerObject.nextInt();
         scannerObject.nextLine();
         do {

@@ -57,5 +57,15 @@ public class Book {
         return authorName;
     }
 
+    /**
+     * This method will change the author name of book
+     *
+     * @param authorName The author name of the book that you want to given
+     */
+
+    public void setAuthorOfBook(String authorName) {
+        this.authorName = authorName;
+    }
+
 
 }

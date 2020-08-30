@@ -9,5 +9,6 @@ package definitions;
 public class Student {
     private String studentFirstName, studentMiddleName, studentLastName;
     private long universityRollNumber;
+    private int numberOfBooksIssued;
 
 }

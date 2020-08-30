@@ -21,6 +21,15 @@ public class Book {
     private String authorName;
     private String thirteenDigitIsbnNumber;
 
+    //Constructor Methods : used to initialise the values (fields) of an object.
+
+    // 1. Non-Parameterized constructor : it has no parameters.
+    public Book() {
+        bookName = "Object Oriented Programming";
+        authorName = "Barney Saltzberg";
+        thirteenDigitIsbnNumber = "978-0-76-115728-1";
+    }
+
     //1. The getter method : it is used to read the value of a private field.
     // Observer methods / Accessor Methods
 

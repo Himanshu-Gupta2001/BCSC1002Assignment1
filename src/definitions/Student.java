@@ -74,5 +74,15 @@ public class Student {
         this.studentLastName = studentLastName;
     }
 
+    /**
+     * This method returns the university roll number of the student.
+     *
+     * @return The university roll number of the student.
+     */
+
+    public long getUniversityRollNumber() {
+        return universityRollNumber;
+    }
+
 
 }

@@ -124,4 +124,16 @@ public class Student {
         return issuedBooksName.clone();
     }
 
+
+    /**
+     * This method sets the name of books issued by the student.
+     *
+     * @param issuedBooksName The name of books issued by the student that you want to given.
+     */
+
+    public void setIssuedBooksName(Book[] issuedBooksName) {
+        this.issuedBooksName = issuedBooksName;
+    }
+
+
 }

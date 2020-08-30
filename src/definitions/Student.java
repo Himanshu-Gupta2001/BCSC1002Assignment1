@@ -27,6 +27,25 @@ public class Student {
         }
     }
 
+    // 2. Parameterized constructor : it has some parameters.
+    public Student(String studentFirstName, String studentMiddleName, String studentLastName, long universityRollNumber, int numberOfBooksIssued, Book[] issuedBooks) {
+        this.studentFirstName = studentFirstName;
+        this.studentMiddleName = studentMiddleName;
+        this.studentLastName = studentLastName;
+        this.universityRollNumber = universityRollNumber;
+        this.numberOfBooksIssued = numberOfBooksIssued;
+        this.issuedBooksName = new Book[5];
+        for (int index = 0; index < issuedBooksName.length; index++) {
+            issuedBooksName[index] = new Book("Issued Book " + (index + 1));
+        }
+    }
+
+    public Student(String studentFirstName, String studentMiddleName, String studentLastName) {
+        this.studentFirstName = studentFirstName;
+        this.studentMiddleName = studentMiddleName;
+        this.studentLastName = studentLastName;
+    }
+
     //add getter and setter methods to read and write the value of private fields respectively
 
     /**

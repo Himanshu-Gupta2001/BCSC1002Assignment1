@@ -12,6 +12,21 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] issuedBooksName;
 
+    //Constructor Methods : used to initialise the values (fields) of an object.
+
+    // 1. Non-Parameterized constructor : it has no parameters.
+    public Student() {
+        studentFirstName = "Mahesh";
+        studentMiddleName = "Kumar";
+        studentLastName = "Agrawal";
+        universityRollNumber = 191500345L;
+        numberOfBooksIssued = 5;
+        this.issuedBooksName = new Book[5];
+        for (int index = 0; index < issuedBooksName.length; index++) {
+            issuedBooksName[index] = new Book("IssuedBook " + (index + 1));
+        }
+    }
+
     //add getter and setter methods to read and write the value of private fields respectively
 
     /**
@@ -89,6 +104,7 @@ public class Student {
      *
      * @param universityRollNumber The university roll number of the student that you want to set.
      */
+
     public void setUniversityRollNumber(long universityRollNumber) {
         this.universityRollNumber = universityRollNumber;
     }

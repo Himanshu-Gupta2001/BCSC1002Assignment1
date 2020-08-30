@@ -11,7 +11,13 @@ public class Library {
 
     private Book[] availableBooks;
 
+    public Book[] getAvailableBooks() {
+        return availableBooks.clone();
+    }
+
     public void setAvailableBooks(Book[] availableBooks) {
         this.availableBooks = availableBooks;
     }
+
+
 }

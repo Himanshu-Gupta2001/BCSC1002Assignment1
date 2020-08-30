@@ -114,4 +114,14 @@ public class Student {
     }
 
 
+    /**
+     * This method returns all the name of books issued by the student.
+     *
+     * @return All the name of books issued by the student.
+     */
+
+    public Book[] getIssuedBooksName() {
+        return issuedBooksName.clone();
+    }
+
 }

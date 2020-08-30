@@ -1,9 +1,10 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
+ *  User: Himanshu Gupta (191500345)
+ *  Date: 26/08/20
  *  Time: 3:49 PM
  *  File Name : Book.java
  * */
+
 package definitions;
 
 public class Book {

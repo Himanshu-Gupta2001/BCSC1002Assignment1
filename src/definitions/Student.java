@@ -12,4 +12,18 @@ public class Student {
     private int numberOfBooksIssued;
     private Book[] issuedBooksName;
 
+
+    //add getter and setter methods to read and write the value of private fields respectively
+
+    /**
+     * This method returns the first name of the student.
+     *
+     * @return The first name of the student.
+     */
+
+    public String getStudentFirstName() {
+        return studentFirstName;
+    }
+
+
 }

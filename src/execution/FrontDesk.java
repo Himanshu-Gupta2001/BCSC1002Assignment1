@@ -27,8 +27,6 @@ public class FrontDesk {
         Book bookObject = new Book();
         Student studentObject = new Student();
         Library libraryObject = new Library();
-        studentInput = scannerObject.nextInt();
-        scannerObject.nextLine();
         do {
             System.out.println();
             System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
@@ -38,6 +36,8 @@ public class FrontDesk {
             System.out.println("3. Show me all my issues books.");
             System.out.println("4. Exit.");
             System.out.println("Enter you choice (1..4):");
+            studentInput = scannerObject.nextInt();
+            scannerObject.nextLine();
             switch (studentInput) {
                 case ISSUE_A_NEW_BOOK_FOR_ME:
                     System.out.println("Please enter your full name : ");
@@ -50,13 +50,21 @@ public class FrontDesk {
                     System.out.println("Please select any one book out of these books");
                     scannerObject.nextLine();
                     nameOfBook = scannerObject.nextLine();
-                    System.out.println("Hope you will read it and gain knowledge.");
-                    System.out.println("Have a nice day");
-                    studentObject.issueBookForMe(nameOfBook, fullName, rollNumber);
+                    studentObject.issueBookForMe(fullName, rollNumber, nameOfBook);
+                    break;
+                case RETURN_A_PREVIOUSLY_ISSUED_BOOK_FOR_ME:
+                    System.out.println("Please enter your full name : ");
+                    fullName = scannerObject.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scannerObject.nextLong();
+                    System.out.println("Please enter a book name do you want to Return : ");
+                    scannerObject.nextLine();
+                    nameOfBook = scannerObject.nextLine();
+                    studentObject.returnIssuedBook(nameOfBook, fullName, rollNumber);
                     break;
             }
+
         } while (studentInput != EXIT);
         scannerObject.close();
     }
 }
-

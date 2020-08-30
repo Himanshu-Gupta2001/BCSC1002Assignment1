@@ -197,10 +197,10 @@ public class Student {
      * @param nameOfIssueBook, studentName and rollNumber of a student .
      */
 
-    public void issueBookForMe(String nameOfIssueBook, String fullName, long universityRollNumber) {
+    public void issueBookForMe(String nameOfIssueBook, String studentName, long universityRollNumber) {
         System.out.println("Hope you will read it and gain knowledge.");
         System.out.println("Have a nice day");
-        System.out.println("Now " + nameOfIssueBook + " has been issued to " + fullName + " having university roll number " + universityRollNumber + ".");
+        System.out.println("Now " + nameOfIssueBook + " has been issued to " + studentName + " having university roll number " + universityRollNumber + ".");
     }
 
     //The toString() method.

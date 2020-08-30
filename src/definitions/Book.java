@@ -18,5 +18,5 @@ public class Book {
     // 6. the equals() and the hashCode() methods.
 
     private String bookName;
-
+    private String authorName;
 }

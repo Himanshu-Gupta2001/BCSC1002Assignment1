@@ -64,4 +64,15 @@ public class Student {
         return studentLastName;
     }
 
+    /**
+     * This method sets the last name of student.
+     *
+     * @param studentLastName The last name of the student that you want to set.
+     */
+
+    public void setStudentLastName(String studentLastName) {
+        this.studentLastName = studentLastName;
+    }
+
+
 }

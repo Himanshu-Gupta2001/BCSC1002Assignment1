@@ -1,9 +1,10 @@
-/*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:50 PM
- *  File Name : Library.java
- * */
+/* Created by IntelliJ IDEA.
+ *  Author: Himanshu Gupta (191500345)
+ *  Date: 27/8/2020
+ *  Time: 11:37 PM
+ *  File Name: Library.java
+ */
+
 package definitions;
 
 public class Library {

@@ -18,6 +18,9 @@ public class Library {
         }
     }
 
+    public Library(Book[] availableBooks) {
+        this.availableBooks = availableBooks;
+    }
 
     public Book[] getAvailableBooks() {
         return availableBooks.clone();

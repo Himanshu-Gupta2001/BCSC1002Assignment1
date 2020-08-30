@@ -199,7 +199,7 @@ public class Student {
 
     public void issueBookForMe(String studentName, long universityRollNumber, String nameOfIssueBook) {
         System.out.println("Hope you will read it and gain knowledge.");
-        System.out.println("Have a nice day");
+        System.out.println("Have a nice day.");
         System.out.println(studentName + " having university roll number " + universityRollNumber + " has issued a book of " + nameOfIssueBook + ".");
     }
 

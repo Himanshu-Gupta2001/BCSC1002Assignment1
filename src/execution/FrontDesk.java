@@ -57,7 +57,7 @@ public class FrontDesk {
                     fullName = scannerObject.nextLine();
                     System.out.println("Please enter your University Roll Number : ");
                     rollNumber = scannerObject.nextLong();
-                    System.out.println("Please enter a book name do you want to Return : ");
+                    System.out.println("Please enter a book name that you want to Return : ");
                     scannerObject.nextLine();
                     nameOfBook = scannerObject.nextLine();
                     studentObject.returnIssuedBook(nameOfBook, fullName, rollNumber);

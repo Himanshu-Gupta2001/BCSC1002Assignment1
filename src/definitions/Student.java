@@ -54,5 +54,14 @@ public class Student {
         this.studentMiddleName = studentMiddleName;
     }
 
+    /**
+     * This method returns the last name of the student.
+     *
+     * @return The last name of the student.
+     */
+
+    public String getStudentLastName() {
+        return studentLastName;
+    }
 
 }

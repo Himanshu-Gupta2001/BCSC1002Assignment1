@@ -38,9 +38,25 @@ public class FrontDesk {
             System.out.println("3. Show me all my issues books.");
             System.out.println("4. Exit.");
             System.out.println("Enter you choice (1..4):");
-
+            switch (studentInput) {
+                case ISSUE_A_NEW_BOOK_FOR_ME:
+                    System.out.println("Please enter your full name : ");
+                    fullName = scannerObject.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scannerObject.nextLong();
+                    for (Book book : libraryObject.getAvailableBooks()) {
+                        System.out.println(book);
+                    }
+                    System.out.println("Please select any one book out of these books");
+                    scannerObject.nextLine();
+                    nameOfBook = scannerObject.nextLine();
+                    System.out.println("Hope you will read it and gain knowledge.");
+                    System.out.println("Have a nice day");
+                    studentObject.issueBookForMe(nameOfBook, fullName, rollNumber);
+                    break;
+            }
         } while (studentInput != EXIT);
         scannerObject.close();
-
     }
 }
+

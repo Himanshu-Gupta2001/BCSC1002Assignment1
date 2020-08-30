@@ -170,5 +170,12 @@ public class Student {
         this.issuedBooksName = issuedBooksName;
     }
 
+    //This method shows us the name of all issued books issued by a student.
+
+    public void showAllIssuedBooks() {
+        for (int index = 0; index < numberOfBooksIssued; index++) {
+            System.out.println("Book " + (index + 1) + " :" + issuedBooksName.getClass().getSimpleName() + (index + 1));
+        }
+    }
 
 }

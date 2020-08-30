@@ -20,4 +20,18 @@ public class Book {
     private String bookName;
     private String authorName;
     private String thirteenDigitIsbnNumber;
+
+    //1. The getter method : it is used to read the value of a private field.
+    // Observer methods / Accessor Methods
+
+    /**
+     * This method returns the name of the book.
+     *
+     * @return The name of the book.
+     */
+
+    public String getBookName() {
+        return bookName;
+    }
+
 }

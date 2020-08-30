@@ -107,5 +107,13 @@ public class Book {
         this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
     }
 
-
+    //The toString() method.
+    @Override
+    public String toString() {
+        return "Book{" +
+                "bookName='" + bookName + '\'' +
+                ", authorName='" + authorName + '\'' +
+                ", thirteenDigitIsbnNumber='" + thirteenDigitIsbnNumber + '\'' +
+                '}';
+    }
 }

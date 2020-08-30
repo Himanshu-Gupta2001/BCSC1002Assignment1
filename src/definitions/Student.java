@@ -178,4 +178,14 @@ public class Student {
         }
     }
 
+    /**
+     * This method  gives the information of a returned book return by a student.
+     *
+     * @param nameOfBook, studentName and rollNumber of a student .
+     */
+
+    public void returnIssuedBook(String nameOfBook, String studentName, long rollNumber) {
+        System.out.println(nameOfBook + " Book is returned by " + studentName + " having university roll number " + rollNumber + ".");
+    }
+
 }

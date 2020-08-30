@@ -77,5 +77,15 @@ public class Book {
         return thirteenDigitIsbnNumber;
     }
 
+    /**
+     * This method will change the ISBN number of book
+     *
+     * @param thirteenDigitIsbnNumber ISBN number of the book that you want to given
+     */
+
+    public void setThirteenDigitIsbnNumber(String thirteenDigitIsbnNumber) {
+        this.thirteenDigitIsbnNumber = thirteenDigitIsbnNumber;
+    }
+
 
 }

@@ -7,6 +7,7 @@
 package definitions;
 
 import java.util.Arrays;
+import java.util.Objects;
 
 public class Student {
     private String studentFirstName, studentMiddleName, studentLastName;
@@ -201,5 +202,26 @@ public class Student {
                 ", numberOfBooksIssued=" + numberOfBooksIssued +
                 ", issuedBooksName=" + Arrays.toString(issuedBooksName) +
                 '}';
+    }
+
+    //The equals() and hashcode() methods.
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Student)) return false;
+        Student student = (Student) o;
+        return getUniversityRollNumber() == student.getUniversityRollNumber() &&
+                getNumberOfBooksIssued() == student.getNumberOfBooksIssued() &&
+                Objects.equals(getStudentFirstName(), student.getStudentFirstName()) &&
+                Objects.equals(getStudentMiddleName(), student.getStudentMiddleName()) &&
+                Objects.equals(getStudentLastName(), student.getStudentLastName()) &&
+                Arrays.equals(getIssuedBooksName(), student.getIssuedBooksName());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(getStudentFirstName(), getStudentMiddleName(), getStudentLastName(), getUniversityRollNumber(), getNumberOfBooksIssued());
+        result = 31 * result + Arrays.hashCode(getIssuedBooksName());
+        return result;
     }
 }

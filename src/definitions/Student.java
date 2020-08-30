@@ -7,4 +7,5 @@
 package definitions;
 
 public class Student {
+    private String studentFirstName, studentMiddleName, studentLastName;
 }

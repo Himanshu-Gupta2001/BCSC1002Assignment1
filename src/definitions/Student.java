@@ -176,19 +176,31 @@ public class Student {
     //This method shows us the name of all issued books issued by a student.
 
     public void showAllIssuedBooks() {
-        for (int index = 0; index < numberOfBooksIssued; index++) {
-            System.out.println("Book " + (index + 1) + " :" + issuedBooksName.getClass().getSimpleName() + (index + 1));
+        for (Book issuedBookName : issuedBooksName) {
+            System.out.println(issuedBookName);
         }
     }
 
     /**
      * This method  gives the information of a returned book return by a student.
      *
-     * @param nameOfBook, studentName and rollNumber of a student .
+     * @param nameOfReturnBook, studentName and universityRollNumber of a student .
      */
 
-    public void returnIssuedBook(String nameOfBook, String studentName, long rollNumber) {
-        System.out.println(nameOfBook + " Book is returned by " + studentName + " having university roll number " + rollNumber + ".");
+    public void returnIssuedBook(String nameOfReturnBook, String studentName, long universityRollNumber) {
+        System.out.println(nameOfReturnBook + " Book is returned by " + studentName + " having university roll number " + universityRollNumber + ".");
+    }
+
+    /**
+     * This method  gives the information of a issued book issued by a student.
+     *
+     * @param nameOfIssueBook, studentName and rollNumber of a student .
+     */
+
+    public void issueBookForMe(String nameOfIssueBook, String fullName, long universityRollNumber) {
+        System.out.println("Hope you will read it and gain knowledge.");
+        System.out.println("Have a nice day");
+        System.out.println("Now " + nameOfIssueBook + " has been issued to " + fullName + " having university roll number " + universityRollNumber + ".");
     }
 
     //The toString() method.

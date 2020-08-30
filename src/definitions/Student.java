@@ -84,5 +84,14 @@ public class Student {
         return universityRollNumber;
     }
 
+    /**
+     * This method sets the university roll number of student.
+     *
+     * @param universityRollNumber The university roll number of the student that you want to set.
+     */
+    public void setUniversityRollNumber(long universityRollNumber) {
+        this.universityRollNumber = universityRollNumber;
+    }
+
 
 }

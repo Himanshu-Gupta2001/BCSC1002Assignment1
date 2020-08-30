@@ -103,4 +103,15 @@ public class Student {
         return numberOfBooksIssued;
     }
 
+    /**
+     * This method sets the number of books issued by the student.
+     *
+     * @param numberOfBooksIssued The number of books issued by the student that you want to given.
+     */
+
+    public void setNumberOfBooksIssued(int numberOfBooksIssued) {
+        this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+
 }

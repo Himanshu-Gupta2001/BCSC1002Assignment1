@@ -38,4 +38,17 @@ public class Library {
                 "availableBooks=" + Arrays.toString(availableBooks) +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Library)) return false;
+        Library library = (Library) o;
+        return Arrays.equals(getAvailableBooks(), library.getAvailableBooks());
+    }
+
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getAvailableBooks());
+    }
 }

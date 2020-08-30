@@ -93,5 +93,14 @@ public class Student {
         this.universityRollNumber = universityRollNumber;
     }
 
+    /**
+     * This method returns the number of books issued by the student.
+     *
+     * @return The number of books issued by the student.
+     */
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
 
 }

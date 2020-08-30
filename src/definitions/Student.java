@@ -39,7 +39,7 @@ public class Student {
         this.numberOfBooksIssued = numberOfBooksIssued;
         this.issuedBooksName = new Book[5];
         for (int index = 0; index < issuedBooksName.length; index++) {
-            issuedBooksName[index] = new Book("Issued Book " + (index + 1));
+            issuedBooksName[index] = new Book(" Issued Book " + (index + 1));
         }
     }
 
@@ -176,8 +176,8 @@ public class Student {
     //This method shows us the name of all issued books issued by a student.
 
     public void showAllIssuedBooks() {
-        for (Book issuedBookName : issuedBooksName) {
-            System.out.println(issuedBookName);
+        for (int index = 0; index < numberOfBooksIssued; index++) {
+            System.out.println("Issued Book" + (index + 1));
         }
     }
 

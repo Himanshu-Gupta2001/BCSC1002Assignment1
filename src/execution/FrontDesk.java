@@ -62,8 +62,15 @@ public class FrontDesk {
                     nameOfBook = scannerObject.nextLine();
                     studentObject.returnIssuedBook(nameOfBook, fullName, rollNumber);
                     break;
+                case SHOW_ME_ALL_MY_ISSUES_BOOKS:
+                    System.out.println("Please enter your First name : ");
+                    fullName = scannerObject.nextLine();
+                    System.out.println("Please enter your University Roll Number : ");
+                    rollNumber = scannerObject.nextLong();
+                    System.out.println("Your all issued books are as follows:");
+                    studentObject.showAllIssuedBooks();
+                    break;
             }
-
         } while (studentInput != EXIT);
         scannerObject.close();
     }
